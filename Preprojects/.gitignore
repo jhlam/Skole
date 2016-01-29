@@ -1,0 +1,13 @@
+#Ignore everything
+*.*
+!.gitignore
+
+#not report related fils.
+!*.txt
+!*.tex
+!*.bib
+!*.pdf
+
+#Images
+!*.png
+!*.jpg
