@@ -1,8 +1,5 @@
 #include "bfs.h"
 
-
-int total_nodes = 6;
-
 int distGen(int dist[total_nodes], int level, bool x[total_nodes], bool y[total_nodes]){
 	int update = 0;
 	for (int i= 0; i<total_nodes; i++){
@@ -47,7 +44,7 @@ int * bfsAsLinearAlgebra(int A[total_nodes], int root, bool x[total_nodes], bool
 	while(!converged){
 		SpMV(A,x,y);
 		converged = distGen(dist, level, x,y);
-		x =y;
+		x = y;
 		level += 1;
 	}
 	return dist;
