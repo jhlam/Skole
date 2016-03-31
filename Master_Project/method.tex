@@ -3,9 +3,18 @@
 - Implement the algorithm(ICM) in C code, since High level synthesis synthesis C/C++ code. 
 - Create test to make sure the code is correct. (Test early to catch problem early.)
 - Port the code over to be high level synthesis compatiable. () 
+- analyse the implementation.
 - implement on Hardware.
-
+- might want to implement wiwth interface, AXI 4 and stuff like that 
 
 
 NOTES: 
 For our example, a AXI4 Stream would be best i think.
+
+implemented a 16-bit LFSR(linear feedback shift register) to generate the random number, which is used to calculate if the activation will take place.
+each have a [5-25\%] activation rate. implemented some different models, use a array instead of a matrix. 
+
+WE have created a generator following the R-mat generator for sparse graph for testing.
+We implemented the simulation as a sparse matrix vector multiplication
+we implemented that in vivado HLS. and synthesised it
+We changed the implementation to accomodate the requirements for HLS; - no recursion, unknown matrix length and allocation of memory. 
