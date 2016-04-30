@@ -18,3 +18,25 @@ WE have created a generator following the R-mat generator for sparse graph for t
 We implemented the simulation as a sparse matrix vector multiplication
 we implemented that in vivado HLS. and synthesised it
 We changed the implementation to accomodate the requirements for HLS; - no recursion, unknown matrix length and allocation of memory. 
+
+
+
+pseudocode section:
+matrix_vector_multiplication(matrix, x\_vector, result\_vector, coin\_toss, total_node):
+
+	for(row->total_node) do:
+		for(col -> total_node) do:
+			if(x_vector[col] && matrix[row][col]) do:
+				if(row=col) do :
+					local\_result = 1;
+				else do:
+					local\_result = coin\_toss && local_result;
+		}
+		result[row] = local\_result;
+		local\_result = 0;
+
+
+\section{Parallization}
+The function matrix\_vector\_multiplication() performes a single matrix vector multiplication. From the pseudocode, we can see that there is a room for parallization of the SPmV. The outer for loop from the pseudocode, can be parlized since thatfoor loop is not dependent on the variable from the inner for-loop. 
+
+another paralization is during the simulation, after the spmv, the frontier needs to be calculated. And a converged() function is called in the end to determen if the simulation is finished. The frontier calculation and converged can pe run in parallel. 
