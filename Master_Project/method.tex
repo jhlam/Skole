@@ -40,3 +40,15 @@ matrix_vector_multiplication(matrix, x\_vector, result\_vector, coin\_toss, tota
 The function matrix\_vector\_multiplication() performes a single matrix vector multiplication. From the pseudocode, we can see that there is a room for parallization of the SPmV. The outer for loop from the pseudocode, can be parlized since thatfoor loop is not dependent on the variable from the inner for-loop. 
 
 another paralization is during the simulation, after the spmv, the frontier needs to be calculated. And a converged() function is called in the end to determen if the simulation is finished. The frontier calculation and converged can pe run in parallel. 
+
+THe IP-core (currently) is only using around 2\% of the resource available on the FPGA(Zedboard). This gives us a lot of room for parallization of different core. Implemented 2 bus, one for input stream, one for output stream. The output stream consist of the result_vector
+
+THe input vector is the seed_vector and the matrix. The seed and the global probability is used a AXI4 lite since they only read once, 
+
+
+IP Core Structure:
+For the second option, where the RNG core is not implemented into the IP CORE, we would have to have teh random number set as AXI4 stream from the buffer, since we would need to call a stream of random number from the core.
+
+
+(global vs local probability)
+For this experiment, we have set a standard global probability, that signef that each activation of nodes is at a specific probability. THe local probability is that there are a loccal probability to each edge. Each edge can have a specific probability.
