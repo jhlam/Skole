@@ -55,4 +55,4 @@ For this experiment, we have set a standard global probability, that signef that
 
 
 \section{High Level Synthesis}
-HLS have many predefined protocol, axi4lite, srteam etc etc. These can be implemented in vivado HLS easily. The program needs to be predefined so that it knows when the streaming is done. The axi stream is best suited for stream of data.
+HLS have many predefined protocol, axi4lite, srteam etc etc. These can be implemented in vivado HLS easily. The program needs to be predefined so that it knows when the streaming is done. The axi stream is best suited for stream of data. The work flow to the HLS is to first generate the C or C++ code. Then the create a testbench. then run the co-simulation. The co-simulation runs the test on both on the C-code and the simulated core. After that, run the core to the vivado to implement and design the core. 
