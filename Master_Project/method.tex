@@ -1,4 +1,16 @@
 \chapter{Method} \label{methode}
+In this chapter, we will discuss how we designed the high level system and how the different core is connected. We will in later chapter discuss the choice of said designs. For this project, we have implemented a simple Linear-feedback Shift Register(LFSR) and our custom IP core which for this report will be called Data Diffusion Core(DD Core).
+
+
+The LFSR is a commonly used random number generator(RNG)[CITATION NEEDED]. Different sized LFRS is able to generate pseudo random numbers dependent on how large the LFSR is. LFSR generates a pseudorandom number based on the previous number. The LFSR is a register containing 16 bit. we take the bit from, 16,14,13 and 11, resulting in (((16 XOR 14) XOR 13 ) XOR 11) = bit. The bit is pushed into bit-position 1 and the entire raegisters shifts towards left 1 bit. 
+
+We ran multiple test to prove that the LFSR is determenistic. As we can see from the table below:
+
+[INSERT TABLE; 2 COL: both send in the same seed and we can see that we receive same number,](Can look at the master thesis Donn send me ages ago.
+
+)
+
+
 - Start by creating pseudocode to illustrate how the Independent cascade model works and how to set up the code.
 - Implement the algorithm(ICM) in C code, since High level synthesis synthesis C/C++ code. 
 - Create test to make sure the code is correct. (Test early to catch problem early.)
@@ -31,7 +43,7 @@ matrix_vector_multiplication(matrix, x\_vector, result\_vector, coin\_toss, tota
 					local\_result = 1;
 				else do:
 					local\_result = coin\_toss && local_result;
-		}
+		}	
 		result[row] = local\_result;
 		local\_result = 0;
 
