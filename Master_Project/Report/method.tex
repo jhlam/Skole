@@ -6,9 +6,19 @@ The LFSR is a commonly used random number generator(RNG)[CITATION NEEDED]. Diffe
 
 We ran multiple test to prove that the LFSR is determenistic. As we can see from the table below:
 
-[INSERT TABLE; 2 COL: both send in the same seed and we can see that we receive same number,](Can look at the master thesis Donn send me ages ago.
+[INSERT TABLE; 2 COL: both send in the same seed and we can see that we receive same number,](Can look at the master thesis Donn send me ages ago.)
 
-)
+The IP core we created, Takes in different signals, The address to the location to the matrix, the location to the result, and the x-buffer. Since we are working with ICM, a global probability, a random seed as the initial state for the LFSR. The core applies matrix vecotr mulitplication. For this implementation, a vector, vector multiplication is applied, to be able to handle graph that is larger then recomended cache size. The cache have not enough space to store the entire adjacency matrix. 
+
+We started by creating the pseudocode to our implementation. The code was a modified form of the shown code of sparse matrix vector multiplication over a boolean semiring.
+
+For this project, we created a sparse matrix with a R-mat generator. The R-mat generator is an simple python program that creates a sparse matrix with total elements equal = power(2,n). The amount of edges that was created is (total_amount_of_edge \times edgefactor). The matrix is stored as a single text file that contains a string containing 1s or 0s. The R-mat generator partitions the matrix into different parts where the element is placed. Each part have a specific percentage. A=0.57, B=0.19, C=0.19, D=0.05. For a undirected adjacency matrix, The matrix must be diagonally identical. [POST PSEUDOCODE OF GENERATOR?]
+
+For our core, we used the architecture of memory mapped. We pass the address in the form of AXI4-lite. The core includes an dma-function, which the HLS have included for us.
+
+We implemented a vector-vector multiplication. The multiplications applies the logical action AND with each element in the vector with the corresponding element in the row of the matrix. 
+
+
 
 
 - Start by creating pseudocode to illustrate how the Independent cascade model works and how to set up the code.
@@ -45,7 +55,7 @@ matrix_vector_multiplication(matrix, x\_vector, result\_vector, coin\_toss, tota
 					local\_result = coin\_toss && local_result;
 		}	
 		result[row] = local\_result;
-		local\_result = 0;
+		local\_result = 0;................
 
 
 \section{Parallization}

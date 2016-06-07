@@ -1,0 +1,45 @@
+\contentsline {section}{\numberline {0.1}Assignment}{i}
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Motivation}{2}
+\contentsline {chapter}{\numberline {2}Background}{3}
+\contentsline {section}{\numberline {2.1}Network terminology and glossary}{3}
+\contentsline {section}{\numberline {2.2}Network}{4}
+\contentsline {subsection}{\numberline {2.2.1}Social network}{4}
+\contentsline {section}{\numberline {2.3}Network properties}{4}
+\contentsline {subsection}{\numberline {2.3.1}The small world effect}{4}
+\contentsline {subsection}{\numberline {2.3.2}Transitivity/Clustering}{5}
+\contentsline {subsection}{\numberline {2.3.3}Degree distribution}{5}
+\contentsline {subsection}{\numberline {2.3.4}Degree correlations}{6}
+\contentsline {subsection}{\numberline {2.3.5}Network resilience}{6}
+\contentsline {subsection}{\numberline {2.3.6}Community structure}{7}
+\contentsline {section}{\numberline {2.4}Breadth First search}{7}
+\contentsline {section}{\numberline {2.5}Data diffusion}{8}
+\contentsline {section}{\numberline {2.6}Basic Diffusion Models}{8}
+\contentsline {section}{\numberline {2.7}Linear threshold model}{8}
+\contentsline {subsection}{\numberline {2.7.1}Independent cascade model}{9}
+\contentsline {section}{\numberline {2.8}Matrix notations}{9}
+\contentsline {subsection}{\numberline {2.8.1}Sparse Matrix}{10}
+\contentsline {subsection}{\numberline {2.8.2}Breadth First Search as a matrix multiplication.}{10}
+\contentsline {subsection}{\numberline {2.8.3}Semiring}{10}
+\contentsline {subsection}{\numberline {2.8.4}BFS to data diffusion}{10}
+\contentsline {section}{\numberline {2.9}Seed selection algorithm}{11}
+\contentsline {subsection}{\numberline {2.9.1}The greedy algorithm}{11}
+\contentsline {subsection}{\numberline {2.9.2}The degree algorithm}{11}
+\contentsline {subsection}{\numberline {2.9.3}Independent algorithm}{12}
+\contentsline {subsection}{\numberline {2.9.4}Random algorithm}{12}
+\contentsline {section}{\numberline {2.10}RMat}{12}
+\contentsline {section}{\numberline {2.11}High Level Synthesis}{13}
+\contentsline {section}{\numberline {2.12}Memory Mapped axi interface}{13}
+\contentsline {section}{\numberline {2.13}Cache coherency }{14}
+\contentsline {section}{\numberline {2.14}\def \par }{14}
+\contentsline {chapter}{\numberline {3}Related works}{15}
+\contentsline {chapter}{\numberline {4}Method}{16}
+\contentsline {section}{\numberline {4.1}Parallization}{17}
+\contentsline {section}{\numberline {4.2}High Level Synthesis}{18}
+\contentsline {chapter}{\numberline {5}Result}{19}
+\contentsline {chapter}{\numberline {6}Discussion}{20}
+\contentsline {section}{\numberline {6.1} problem that was encountered}{20}
+\contentsline {section}{\numberline {6.2}AXI4}{20}
+\contentsline {section}{\numberline {6.3}implementaion}{20}
+\contentsline {chapter}{\numberline {7}Future work}{21}
+\contentsline {chapter}{\numberline {8}Conclusion}{22}
