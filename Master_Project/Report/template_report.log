@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=latex 2016.6.7)  7 JUN 2016 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.7)  7 JUN 2016 23:25
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -133,10 +133,18 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
-File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count109
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -146,7 +154,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count109
+\c@NAT@ctr=\count110
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
@@ -173,13 +181,13 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@old@col=\dimen118
 \TX@target=\dimen119
 \TX@delta=\dimen120
-\TX@cols=\count110
+\TX@cols=\count111
 \TX@ftn=\toks24
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
 \wrapoverhang=\dimen121
 \WF@size=\dimen122
-\c@WF@wrappedlines=\count111
+\c@WF@wrappedlines=\count112
 \WF@box=\box30
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
@@ -201,16 +209,15 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen128
 \caption@hangindent=\dimen129
 )
-\c@ContinuedFloat=\count112
+\c@ContinuedFloat=\count113
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@subfigure=\count113
-\c@subtable=\count114
+\c@subfigure=\count114
+\c@subtable=\count115
 )
-(template_report.aux (front.aux) (assignment.aux) (abstract.aux) (forworde.aux)
-(introduction.aux) (background.aux) (related_work.aux) (method.aux) (result.aux
-) (discussion.aux) (future_work.aux) (conclusion.aux))
+(template_report.aux (front.aux) (assignment.aux) (abstract.aux)
+(Introduction.aux))
 \openout1 = `template_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -225,25 +232,74 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen130
+\scratchbox=\box31
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen131
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks27
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `front.aux'.
 
- (front.tex
 
-! LaTeX Error: File `Figures/ntnu' not found.
+(front.tex <Figures/ntnu.png, id=1, 359.4228pt x 120.45pt>
+File: Figures/ntnu.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \includegraphics[scale=0.3]{Figures/ntnu}
-                                             
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use Figures/ntnu.png>
+Package pdftex.def Info: Figures/ntnu.png used on input line 4.
+(pdftex.def)             Requested size: 107.82767pt x 36.13527pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
@@ -252,10 +308,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 ) [1
 
 
-]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figures/ntnu.png>]
 \openout2 = `assignment.aux'.
 
- (assignment.tex) [1
+
+(assignment.tex) [1
 
 
 ]
@@ -274,56 +331,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Runaway argument?
-{\numberline {2.14}\def 
-! Paragraph ended before \@dottedtocline was complete.
-<to be read again> 
-                   \par 
-l.34 ...line {section}{\numberline {2.14}\def \par
-                                                   }{14}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Extra }, or forgotten \endgroup.
-l.34 ...ne {section}{\numberline {2.14}\def \par }
-                                                  {14}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...chapter}{\numberline {3}Related works}{15}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3
-
-
-])
+))
 \tf@toc=\write3
 \openout3 = `template_report.toc'.
 
- [4] (template_report.lof
+ [3
 
-Package natbib Warning: Citation `Rmat2004' on page v undefined on input line 9
-.
 
-)
+]
+(template_report.lof)
 \tf@lof=\write4
 \openout4 = `template_report.lof'.
 
- [5
+ [4
 
 ] (template_report.lot)
 \tf@lot=\write5
@@ -332,938 +352,83 @@ Package natbib Warning: Citation `Rmat2004' on page v undefined on input line 9
  [1
 
 ]
-\openout2 = `forworde.aux'.
+\openout2 = `Introduction.aux'.
 
-
-No file forworde.tex.
-\openout2 = `introduction.aux'.
-
-(introduction.tex
+ (Introduction.tex
 Chapter 1.
 
-Package natbib Warning: Citation `52214' on page 2 undefined on input line 5.
-
-) [2
-
+Package natbib Warning: Citation `InformationDiffusionThroughBlogspace' on page
+ 2 undefined on input line 4.
 
 
-
-]
-\openout2 = `background.aux'.
-
- (background.tex
-Chapter 2.
-
-Package natbib Warning: Citation `AlgoToMath' on page 3 undefined on input line
- 3.
+Package natbib Warning: Citation `52214' on page 2 undefined on input line 14.
 
 
-Package natbib Warning: Citation `HybridBFS2015' on page 3 undefined on input l
-ine 3.
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
 
 
-! LaTeX Error: File `Figures/smallExampleNetwork2' not found.
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...ludegraphics{Figures/smallExampleNetwork2}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
-[3
-
-
-
-]
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 21.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 21.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 21.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 21.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 21.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 24.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 24.
-
-
-Package natbib Warning: Citation `smallWorldExperiment1969' on page 4 undefined
- on input line 24.
-
-
-Package natbib Warning: Citation `SmallWorldProblemSmilgram1960' on page 4 unde
-fined on input line 31.
-
-
-Package natbib Warning: Citation `Experiment1969' on page 4 undefined on input 
-line 31.
-
-
-Package natbib Warning: Citation `ComplexNetwork2003' on page 4 undefined on in
-put line 31.
-
-[4]
-
-Package natbib Warning: Citation `worldExperiment1969' on page 5 undefined on i
-nput line 33.
-
-
-Package natbib Warning: Citation `worldExperiment1969' on page 5 undefined on i
-nput line 33.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+Underfull \hbox (badness 10000) in paragraph at lines 20--37
 
-
-! LaTeX Error: File `triangleStruc' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 	\includegraphics{triangleStruc}
-                                     
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[5]
-
-Package natbib Warning: Citation `complexNetwork2003' on page 6 undefined on in
-put line 55.
-
-
-Package natbib Warning: Citation `AssortativeMixing2002' on page 6 undefined on
- input line 55.
-
-
-Package natbib Warning: Citation `complexNetwork2003' on page 6 undefined on in
-put line 62.
-
-
-Package natbib Warning: Citation `RaceInSchool' on page 6 undefined on input li
-ne 69.
-
-[6] [7]
-
-Package natbib Warning: Citation `MaximizeSpread2003' on page 8 undefined on in
-put line 106.
-
-
-Package natbib Warning: Citation `MaximizeSpread2003' on page 8 undefined on in
-put line 106.
-
-
-LaTeX Warning: Reference `fig:;omearThresh2' on page 8 undefined on input line 
-111.
-
-
-! LaTeX Error: File `linearThreshold' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117 ...aphics[width=\textwidth]{linearThreshold}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `linearThreshold2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...phics[width=\textwidth]{linearThreshold2}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `linearThreshold3' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 ...phics[width=\textwidth]{linearThreshold3}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[8]
-
-! LaTeX Error: File `ICM' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 		\includegraphics[width=\textwidth]{ICM}
-                                               
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `ICM2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 		\includegraphics[width=\textwidth]{ICM2}
-                                                
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `ICM3' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 		\includegraphics[width=\textwidth]{ICM3}
-                                                
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `AlgoToMath' on page 9 undefined on input line
- 163.
-
-
-Package natbib Warning: Citation `McAndrew1963' on page 9 undefined on input li
-ne 163.
-
-
-LaTeX Warning: Reference `fig:AdjaToMatrix' on page 9 undefined on input line 1
-63.
-
-[9]
-
-! LaTeX Error: File `AdjacencyM' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170 ...udegraphics[width=\textwidth]{AdjacencyM}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `simpleGraph' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 ...degraphics[width=\textwidth]{simpleGraph}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (6.66664pt too wide) in paragraph at lines 169--180
-[]$[]$   $[]$ 
  []
 
 
-Package natbib Warning: Citation `AlgoToMath' on page 10 undefined on input lin
-e 185.
+Underfull \hbox (badness 10000) in paragraph at lines 20--37
 
-
-Package natbib Warning: Citation `HybridBFS2015' on page 10 undefined on input 
-line 185.
-
-
-! LaTeX Error: File `BFS_algo' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...cludegraphics[width=\textwidth]{BFS_algo}
-                                                  
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `HybridBFS2015' on page 10 undefined on input 
-line 197.
-
-
-Package natbib Warning: Citation `ViralMarketing' on page 10 undefined on input
- line 204.
-
-[10]
-
-Package natbib Warning: Citation `greedyInfluenc2005' on page 11 undefined on i
-nput line 207.
-
-
-Package natbib Warning: Citation `greedyInfluenc2005' on page 11 undefined on i
-nput line 207.
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ’ in font cmr10!
-
-Package natbib Warning: Citation `greedyInfluenc2005' on page 11 undefined on i
-nput line 225.
-
-[11]
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ’ in font cmr10!
-
-
-Package natbib Warning: Citation `Rmat2004' on page 12 undefined on input line 
-260.
-
-
-Package natbib Warning: Citation `Rmat2004' on page 12 undefined on input line 
-260.
-
-[12]
-
-! LaTeX Error: File `Rmat' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.264 \includegraphics{Rmat}
-                            
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package natbib Warning: Citation `Rmat2004' on page 13 undefined on input line 
-265.
-
-
-Package natbib Warning: Citation `Rmat2004' on page 13 undefined on input line 
-265.
-
-
-! LaTeX Error: File `flip_matrix' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \includegraphics{flip_matrix}
-                                   
-I could not locate the file with any of these extensions:
-.eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Environment list_type undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 \begin{list_type}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279 \item w
-             hat is Information diffusion
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 \item w
-             hat is the solution(bfs)
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 \item w
-             hat is ICM
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 \item h
-             ow to implement bfs as SpMV
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.283 \item h
-             ow to apply information diffusion to bfs and problem
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.285 \end
-          {list_type}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{document} ended by \end{list_type}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.285 \end{list_type}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[13]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
-
-! Argument of \@sect has an extra }.
-<inserted text> 
-                \par 
-l.300 \end{equation}}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{\normalfont \Large \bfseries }{\def \@currenvir {equation}\edef \@currenvline 
-\ETC.
-! Paragraph ended before \@sect was complete.
-<to be read again> 
-                   \par 
-l.300 \end{equation}}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-) [14]
-\openout2 = `related_work.aux'.
-
- (related_work.tex
-Chapter 3.
-
-! LaTeX Error: Environment list_type undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \begin{list_type}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \item Y
-           amans paper, where there are some works that shows the solution i...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \item p
-           arallalization of the algorithm
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \item m
-           aybe some examples of HLS to show that HLS is used.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \item s
-           howe that there are not many HLS implementation, recently matured.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \item s
-           how that there are not many hardware implementation for informati...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \item n
-           eed to look through Yamans paper and get some refrences from there.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \item m
-            ight be good to look at how this type of sparce matrix multiplic...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \item s
-            how other implementation of SPmv
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \item S
-            how some examples where image processing is done through vivado ...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \begin{document} ended by \end{list_type}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 \end{list_type}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [15
-
-
-
-]
-\openout2 = `method.aux'.
-
- (method.tex
-Chapter 4.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 ...mount of edges that was created is (total_
-                                                  amount_of_edge \times edge...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.16 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (168.69255pt too wide) in paragraph at lines 15--16
-\OT1/cmr/m/it/10 (total$[]\OML/cmm/m/it/10 mount[]f[]dge \OMS/cmsy/m/n/10  \OM
-L/cmm/m/it/10 edgefactor\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :Thematrixisstoredasa
-singletextfilethatcontainsastringcontaining\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 so
-r\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 s:TheR \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (181.05405pt too wide) in paragraph at lines 15--16
-\OML/cmm/m/it/10 matgeneratorpartitionsthematrixintodifferentpartswheretheeleme
-ntisplaced:Eachparthaveaspecificpercentage:A \OT1/cmr/m/n/10 =
+Underfull \hbox (badness 10000) in paragraph at lines 20--37
+
  []
 
 
-Overfull \hbox (332.56352pt too wide) in paragraph at lines 15--16
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 57\OML/cmm/m/it/10 ; B \OT1/
-cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 19\OML/cmm/m/it/10 ; C \OT1/cmr
-/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 19\OML/cmm/m/it/10 ; D \OT1/cmr/m/
-n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05\OML/cmm/m/it/10 :Foraundirectedadj
-acencymatrix; Thematrixmustbediagonallyidentical:\OT1/cmr/m/n/10 [\OML/cmm/m/it
-/10 POSTPSEUDOCODEOFGENERATOR\OT1/cmr/m/n/10 ?]$ 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 20--37
 
-[16
-
-
-
-]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.47 matrix_
-            vector_multiplication(matrix, x\_vector, result\_vector, coin\_t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.48 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (111.71297pt too wide) in paragraph at lines 46--48
-[]\OT1/cmr/m/it/10 pseudocode sec-tion: matrix$[]\OML/cmm/m/it/10 ector[]ultipl
-ication\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 matrix; x[]vector; result[]vector; coi
-n[]toss; total[]ode\OT1/cmr/m/n/10 ) :$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.49 	for(row->total_
-                     node) do:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Misplaced alignment tab character &.
-l.51 			if(x_vector[col] &
-                          & matrix[row][col]) do:
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.51 			if(x_vector[col] &&
-                            matrix[row][col]) do:
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.55 					local\_result = coin\_toss &
-                                      & local_result;
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.55 					local\_result = coin\_toss &&
-                                        local_result;
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten $.
-l.56 		}
-        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.59 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (43.78018pt too wide) in paragraph at lines 49--59
-[]\OT1/cmr/m/it/10 for(row->total$[]\OML/cmm/m/it/10 ode\OT1/cmr/m/n/10 )\OML/c
-mm/m/it/10 do \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 for\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 col\OMS/cmsy/m/n/10   \OML/cmm/m/it/10 > total[]ode\OT1/cmr/m/n/10 )\OML
-/cmm/m/it/10 do \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/
-m/it/10 x[]ector\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 col\OT1/cmr/m/n/10 ]\OML/cmm/
-m/it/10 matrix\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 row\OT1/cmr/m/n/10 ][\OML/cmm/m
-/it/10 col\OT1/cmr/m/n/10 ])\OML/cmm/m/it/10 do \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (58.63176pt too wide) in paragraph at lines 49--59
-\OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 row \OT1/cmr/m/n/10 = \OML
-/cmm/m/it/10 col\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 do \OT1/cmr/m/n/10 : \OML/cmm
-/m/it/10 local[]result \OT1/cmr/m/n/10 = 1; \OML/cmm/m/it/10 elsedo \OT1/cmr/m/
-n/10 : \OML/cmm/m/it/10 local[]result \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 coin[]
-tosslocal[]esult\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 result\OT1/cmr/m/n/10 [\OML/
-cmm/m/it/10 row\OT1/cmr/m/n/10 ] =
+Underfull \hbox (badness 10000) in paragraph at lines 20--37
+
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.66 .... The output stream consist of the result_
-                                                  vector
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.67 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.68 THe input vector is the seed_
-                                  vector and the matrix. The seed and the gl...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.69 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+[2
 
 
-Overfull \hbox (200.22566pt too wide) in paragraph at lines 68--69
-[]\OT1/cmr/m/it/10 THe in-put vec-tor is the seed$[]\OML/cmm/m/it/10 ectorandth
-ematrix:TheseedandtheglobalprobabilityisusedaAXI\OT1/cmr/m/n/10 4\OML/cmm/m/it/
-10 litesincetheyonlyreadonce;$ 
- []
-
-[17]) [18]
-\openout2 = `result.aux'.
-
- (result.tex
-Chapter 5.
-) [19
-
-
-
-]
-\openout2 = `discussion.aux'.
-
- (discussion.tex
-Chapter 6.
-
-Overfull \hbox (153.71304pt too wide) in paragraph at lines 12--13
-[]\OT1/cmr/m/it/10 2000000000.00000, 2000, 500, 22.222222222222, 125, 80, 55.55
-55555556,40.8163265306122,31.2500000000000,
- []
-
-) [20
-
-
-
-]
-\openout2 = `future_work.aux'.
-
- (future_work.tex
-Chapter 7.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 ...oygraph, which is on the scale at around 2^
-                                                  26
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.9 
-    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-) [21
-
-
-
-]
-\openout2 = `conclusion.aux'.
-
- (conclusion.tex
-Chapter 8.
-) [22
-
-
-
-]
+] [3]
 No file template_report.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-(template_report.aux (front.aux) (assignment.aux) (abstract.aux) (forworde.aux)
-(introduction.aux) (background.aux) (related_work.aux) (method.aux) (result.aux
-) (discussion.aux) (future_work.aux) (conclusion.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 106 ({)
-### bottom level 
+(template_report.aux (front.aux) (assignment.aux) (abstract.aux)
+(Introduction.aux)) ) 
 Here is how much of TeX's memory you used:
- 3913 strings out of 493336
- 55116 string characters out of 3136707
- 123438 words of memory out of 3000000
- 7280 multiletter control sequences out of 15000+200000
- 11305 words of font info for 42 fonts, out of 3000000 for 9000
+ 4607 strings out of 493335
+ 66388 string characters out of 3136681
+ 132960 words of memory out of 3000000
+ 8037 multiletter control sequences out of 15000+200000
+ 8467 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,42p,1728b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,5n,40p,867b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on template_report.dvi (28 pages, 71812 bytes).
+Output written on template_report.pdf (8 pages, 158272 bytes).
+PDF statistics:
+ 66 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

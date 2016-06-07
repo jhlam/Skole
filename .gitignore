@@ -52,3 +52,9 @@ Master_Project/Adjacency matrix/adjacency_gargantuan_v2.txt
 Master_Project/Report/background.log
 *.dvi
 Master_Project/Report/template_report.log
+*.bbl
+*.blg
+*.aux
+Master_Project/Report/future_work.aux
+*.log
+*.gz
