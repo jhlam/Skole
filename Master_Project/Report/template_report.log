@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=latex 2016.6.7)  7 JUN 2016 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=latex 2016.6.7)  7 JUN 2016 20:45
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -362,14 +362,14 @@ Package natbib Warning: Citation `HybridBFS2015' on page 3 undefined on input l
 ine 3.
 
 
-! LaTeX Error: File `smallExampleNetwork2' not found.
+! LaTeX Error: File `Figures/smallExampleNetwork2' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 	\includegraphics{smallExampleNetwork2}
-                                            
+l.10 ...ludegraphics{Figures/smallExampleNetwork2}
+                                                  
 I could not locate the file with any of these extensions:
 .eps,.ps,.eps.gz,.ps.gz,.eps.Z,.mps
 Try typing  <return>  to proceed.

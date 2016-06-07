@@ -48,3 +48,7 @@ Temporary Items
 Master_Project/Adjacency matrix/adjacency_gargantuan.txt
 Master_Project/Adjacency matrix/adjacency_gargantuan_v2.txt
 *.py
+*.dvi
+Master_Project/Report/background.log
+*.dvi
+Master_Project/Report/template_report.log
