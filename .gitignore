@@ -58,3 +58,7 @@ Master_Project/Report/template_report.log
 Master_Project/Report/future_work.aux
 *.log
 *.gz
+*.dvi
+*.log
+*.toc
+*.aux

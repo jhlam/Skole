@@ -1,24 +1,32 @@
 \chapter{Introduction} \label{intro}
 
 \section{Motivation}
-\textit{Information diffusion} is a field of network research where a message, or data, is propagated through a \textit{network} or a \textit{graph}. The message originates from a chosen set of nodes, known as \textit{seed nodes}. These seed nodes passes the message to it's neighbour through the edges and thus propagate the message over the network. There are different models used in Information diffusion, \textit{Independent Cascade Model}, and \textit{Linear Threshold Model}. Information Diffusion can be used to model different phenomena such as the spread of disease, viral marketing, or even spread of viral videos and \textit{"memes"}\cite{InformationDiffusionThroughBlogspace}. The effectiveness of the simulation is measured in the spread and the speed of propagation.
+\textit{Information diffusion} is a field of network research where a message, or data, is propagated through a \textit{network} or a \textit{graph}. The message originates from a chosen set of nodes, known as \textit{seed nodes}. These seed nodes passes the message to it's neighbour through the edges and thus propagate the message over theentire network. There are different models used in Information diffusion, \textit{Independent Cascade Model}, and \textit{Linear Threshold Model}. Information Diffusion can be used to model different phenomena such as the spread of disease, viral marketing, or even spread of viral videos and \textit{"memes"}\cite{InformationDiffusionThroughBlogspace}. The effectiveness of the simulation is measured in the spread and the speed of propagation. The effectiveness of the simulation is dependent on the chosen seed nodes. By finding the most optimal set of seed node, we can potentially stop an epidemic by vaccinating influential nodes, we can find important target for viral marketing by giving free sample, and use this information to quickly spread message during disaster scenarios.
 
-The effectiveness of the simulation is dependent on the choosen seed nodes. By finding influential nodes we can find target  
+There are multiple studies done regarding information diffusion, \cite{cha2010measuring}, \cite{InformationDiffusionThroughBlogspace}, \cite{5694014},  \cite{InfoDiffAndExternalInfluInNetworks}. There are few that focus on optimizing the seed selection, especially in hardware. The seed selection algorithm is an greedy solution, where every set of node is tested and the set with best coverage and time is chosen. This is a time consuming process and highly parallelizable. This makes it a good candidate for \textit{Field-programmable gate arrays}(FPGAs). 
 
+\textit{High Level Syntesis}(HLS) synthesis high level behaviour and constrains to lower level design.\cite{52214}. It allows users to implement an algorithm in high level language, C or C++, and generate an optimal design in \textit{verilog} or \textit{VHDL}. Verilog and VHDL are hardware descriptive language designed to describe digital systems \cite{thomas2008verilog}. In recent years, High Level Synthesis have gotten more attention and more support, the xilinx forums are anwsered quickly by the developers and highly populated with seasoned hardware designers and novices. 
 
-Both Independent cascade model and the Linear Threshold model have different uses. W
+Unlike traditional hardware design, HLS allows programmer with limited knowledge to desgn an optimal custom \textit{Intellectual property core}(IP-core). In HLS, programmers can test out multiple different optimization schemes in short period of time. Thus allowing the programmer to quickly test out different optimization schemes. 
 
-
-
-
-High level synthesis take algorithms implemented in high level programming language such as C and C++ and and $synthesise$ the design to low level designs\citep{52214}. 
-
+For our implementation, we are focusing on performing the Information Diffusion as a sparse matrix-vector multiplication.
 
 \section{Assignment Interpretation}
-From the assignement text, these task were choosen as the main focus of this thesis:\\ \hfil \\ \hfil
-
+From the assignment text, these task were chosen as the main focus of this thesis:\\ \hfil \\ \hfil
 \textbf{Task 1 \textit{(mandatory)}} Implement Information Diffusion as Sparse matrix vector multiplication, with high level language C.  \\ \hfil \\ \hfil
 \textbf{Task 2 \textit{(mandatory)}} Tailor the implementation of Information Diffusion for synthesise with Vivado HLS.   \\ \hfil \\ \hfil
 \textbf{Task 3 \textit{(optional)}} Implement said design on a  Zynq FPGA board. \\ \hfil \\ \hfil
 \textbf{Task 4 \textit{(optional)}} Extend the system to be able to handle graph in the size of toy graphs(containing $2^{26})$ nodes) \\ \hfil \\ \hfil
 
+
+\section{Report Structure}
+We have here the basic outline for this report and a short overview of the remainder of this report:
+
+\textbf{Chapter 2: Background} contains the information regarding network, Information diffusion, matrix vector multiplication and High level synthesis. Most of the background information regarding this report can be found in this chapter. \\ \hfil \\ \hfil
+\textbf{Chapter 3: Related Work} shows what the related works and state of the art regarding information diffusion.\\ \hfil \\ \hfil
+\textbf{Chapter 4: Architecture}  \\ \hfil \\ \hfil
+\textbf{Chapter 5:.  \\ \hfil \\ \hfil
+\textbf{Chapter 6: Future Work}  \\ \hfil \\ \hfil
+\textbf{Chapter 7: Conclusion} \\ \hfil \\ \hfil
+
+somehting
