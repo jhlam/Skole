@@ -9,7 +9,7 @@ There are multiple studies done regarding information diffusion, \cite{cha2010me
 
 Unlike traditional hardware design, HLS allows programmer with limited knowledge to desgn an optimal custom \textit{Intellectual property core}(IP-core). In HLS, programmers can test out multiple different optimization schemes in short period of time. Thus allowing the programmer to quickly test out different optimization schemes. 
 
-For our implementation, we are focusing on performing the Information Diffusion as a sparse matrix-vector multiplication.
+For our implementation, we focused mainly on the ICM. The ICM is a special case of the common graph traversal algorithm \textit{Breadth First Search}(bfs). For our implementation, we chose to implement the ICM as a custom \textit{sparse matrix vector multiplication}(spmv). By performing ICM as spmv, we can utilize the parallelism options that spmv uncovers. 
 
 \section{Assignment Interpretation}
 From the assignment text, these task were chosen as the main focus of this thesis:\\ \hfil \\ \hfil
@@ -20,12 +20,12 @@ From the assignment text, these task were chosen as the main focus of this thesi
 
 
 \section{Report Structure}
-We have here the basic outline for this report and a short overview of the remainder of this report:
+We have here the basic outline for this report and a short overview of the remainder of this report:\\ \hfill
 
 \textbf{Chapter 2: Background} contains the information regarding network, Information diffusion, matrix vector multiplication and High level synthesis. Most of the background information regarding this report can be found in this chapter. \\ \hfil \\ \hfil
 \textbf{Chapter 3: Related Work} shows what the related works and state of the art regarding information diffusion.\\ \hfil \\ \hfil
 \textbf{Chapter 4: Architecture}  \\ \hfil \\ \hfil
-\textbf{Chapter 5:.  \\ \hfil \\ \hfil
+\textbf{Chapter 5:}.  \\ \hfil \\ \hfil
 \textbf{Chapter 6: Future Work}  \\ \hfil \\ \hfil
 \textbf{Chapter 7: Conclusion} \\ \hfil \\ \hfil
 
