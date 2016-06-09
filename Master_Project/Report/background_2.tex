@@ -1,17 +1,15 @@
 \chapter{Background} \label{background}
 
-In this chapter, we will look at the fundamental concepts and background information for the different diffusion model, the seed selection problem and performing breadth-first search using matrix multiplication. We will also have a look at High Level synthesis. This chapter will contain notations that we will use throughout the report. One aspect we will focus on, is how we can perform graph algorithm such as breadth first search as matrix multiplication. The motivation for transforming breadth first search as matrix-vector multiplication is that displaying the graph algorithm as a matrix multiplication can display the data access pattern for the algorithm and can be readily optimized  \cite{AlgoToMath}. We will look at the independent cascade model, which is a special case of breadth first search  \cite{HybridBFS2015}. By looking at how to improve BFS, we can apply such optimization to ICM and the seed selection algorithm. Another major part of the report is to utilize High Level Synthesis to synthesise the algorithm. 
-
-
-\section{Network terminology and glossary}
-The fundamental unit in a network is a \textit{vertex} (pl. vertices), sometimes called a node. For this report, both vertex and node will be used. The "bridge" or the line connecting two vertices is called an \textit{edge}, and is shown in Figure \ref{fig:SimpleGraph}.  Different networks have different types of edges, some are\textit{directed}, while others are \textit{undirected}. A directed edge is an edge that runs in only one direction (such as a one-way road between two points), and undirected runs in both directions. Directed edges can be thought of as sporting arrows indicating their orientation, while undirected edges have no such orientation. A graph is directed if all of its edges are directed.
+In this chapter, we will look at the fundamental concepts and background information for the different diffusion model, the seed selection problem and performing breadth-first search using matrix multiplication. We will also have a look at High Level synthesis and Information about the zedboard. This chapter will contain notations that we will use throughout the report. One aspect we will focus on, is how we can perform graph algorithm such as breadth first search as matrix multiplication. The motivation for transforming breadth first search as matrix-vector multiplication is that displaying the graph algorithm as a matrix multiplication can display the data access pattern for the algorithm and can be readily optimized  \cite{AlgoToMath}. We will look at the independent cascade model, which is a special case of breadth first search  \cite{HybridBFS2015}. By looking at how to improve BFS, we can apply such optimization to ICM and the seed selection algorithm. Another major part of the report is to utilize High Level Synthesis to synthesise the algorithm. \\
 
 \begin{figure}[!ht]
-	\includegraphics{smallExampleNetwork2}
+	\includegraphics[scale=0.7]{Figures/smallExampleNetwork2}
 	\caption{Simple network} 
 	\label{fig:SimpleGraph}
 \end{figure}
 
+\section{Network teminalogy and glossary}
+The fundamental unit in a network is a \textit{vertex} (pl. vertices), sometimes called a node. For this report, both vertex and node will be used. The "bridge" or the line connecting two vertices is called an \textit{edge}, and is shown in Figure \ref{fig:SimpleGraph}.  Different networks have different types of edges, some are\textit{directed}, while others are \textit{undirected}. A directed edge is an edge that runs in only one direction (such as a one-way road between two points), and undirected runs in both directions. Directed edges can be thought of as sporting arrows indicating their orientation, while undirected edges have no such orientation. A graph is directed if all of its edges are directed.
 
 Each vertex has a value that is called \textit{degree}. Degree for a vertex $v_1$ is the amount of edges connected to $v_1$. Note that the degree is not necessarily equal to the number of vertices adjacent to a vertex, since there may be more than one edge between any two vertices. A directed graph has both an in-degree and an out-degree for each vertex, which are the numbers of in-coming and out-going edges respectively. The \textit{component} to which a vertex belongs is that set of vertices that can be reached from it by paths running along edges of the graph. In a directed graph a vertex has both an in-component and an out-component, which are the sets of vertices from which the vertex can be reached and which can be reached from it.
 
@@ -26,11 +24,11 @@ A social network is a set of individuals connected to each other via some form o
 \section{Network properties}
 Network properties are different characteristic properties that networks displays. We will focus on those that are more relevant to social networks and how it is relevant to the ICM, data diffusion and seed selection.
 
-\subsection{The small world effect}\label{sec:SmallWorldeffect}
+\subsection{The small world effect} \label{sec:SmallWorldeffect}
 
 The small world effect was first demonstrated by Stanley Milgram in the 1960s during his famous letter passing experiment \cite{SmallWorldProblemSmilgram1960}. The experiment involved passing letters from person to person to reach a designated target with only small steps. For the published case, the chain was around six  \cite{Experiment1969}, meaning there were only six passes necessary for the letter to reach its destination. This shows us that for most pairs of vertices in a network can reach each other with a short path. A more precise wording is that "Networks are said to show the small world effect if the value of \textit{l} scales logarithmic or slower with the network size for a fixed mean degree." \cite{ComplexNetwork2003}. We have defined \textit{l}  to be the mean geodesic distance between vertex pairs in a network.
 
-The small world problem can be summarized as: "what is the probability that any two people, selected arbitrarily from a large population, such as that of the United States, will know each other?" \cite{worldExperiment1969}. This in itself is not that interesting, the paper \cite{worldExperiment1969} asked even though  person \textit{A} and\textit{Z} does not know each other, do they have a set of individuals \{$\b_1, b_2, ... b_n $\} who are mutual friend or even a "chain" of such individual(\textit {A-B-C-...-Y-Z}).
+The small world problem can be summarized as: "what is the probability that any two people, selected arbitrarily from a large population, such as that of the United States, will know each other?" \cite{SmallworldExperiment1969}. This in itself is not that interesting, the paper \cite{SmallworldExperiment1969} asked even though  person \textit{A} and\textit{Z} does not know each other, do they have a set of individuals \{$b_1, b_2, ... b_n $\} who are mutual friend or even a "chain" of such individual(\textit {A-B-C-...-Y-Z}).
 
 For the data diffusion problem, this kind of effect would result in that the diffusion through a network would need around 6 steps to have traveled through the entire network if the transition probability is high. Meaning that most node can reach each other through a relatively small step.
 
@@ -50,6 +48,7 @@ For data diffusion and seed selection, this would mean that picking nodes that a
 As mentioned earlier, each node have a degree. The degree distribution shows how the different degrees in the network is distributed. From the degree distribution we can see how many nodes have specific degree. Different networks have different shaped degree distribution.
 
 For random graphs, the distribution would most likely be a Poiison distribution or binomial. For social graph, the degree distribution is often in the shape of exponential distribution. For the information diffusion, this distribution shows us how many high degree nodes there are in the network and those node would likely be high prioritized node. One of the algorithm uses the distribution to select the seed nodes. We will discuss this in later sections.  
+
 
 \subsection{Degree correlations} \label{degreeCorr}
 As mentioned in section \ref{degreeDis}, the network have a degree distribution with few high degree nodes and many low degree nodes. One interesting properties is the degree correlations. Degree correlations is how the high degree and low degree nodes connects to each other. One question is wether high degree nodes tends to connect to other high degree nodes, or if they prefer to connect to low degree nodes. It turns out that both incidents ar found in networks \cite{complexNetwork2003}. Most social networks are assortative, meaning vertices have a selective linking, where high degree vertex tends to connects to other high degree vertex, while technological network and biological network are most likely disassortative \cite{AssortativeMixing2002}. 
@@ -71,9 +70,10 @@ One properties that is often observed in a social network, is the community stru
 This type of community structure would have a large impact on how the algorithm would select a seed for information diffusion. If all the seed would be selected in one community, the probability of spreading over to other communities would be smaller. This is of course dependent on how many intercommunity connections there are in the network.
 
 \section{Breadth First search}
-Breadth first search is an tree traversal algorithm. BFS start at the root node \textit{v_r}. The algorithm then stores all $v_r$s children node in an \textit{queue}. The algorithm then takes the first node from the queue, $\textit{v_1}$ and stores all the children node to \textit{v_1} in the back of the queue, this process continues until the queue is empty and all the nodes have been iterated over. 
+Breadth first search is an tree traversal algorithm. BFS start at the root node \textit{$v_r$}. The algorithm then stores all $v_r$s children node in an \textit{queue}. The algorithm then takes the first node from the queue, \textit{$v_1$} and stores all the children node to \textit{$v_1$} in the back of the queue, this process continues until the queue is empty and all the nodes have been iterated over. 
 
 Breadth first search is a common graph iteration algorithm. The breadth first search is often limited by the irregular memory access where the algorithm have to find the data stored in different spaces in the memory. As mentioned earlier, independent cascade model is one special case of the Breadth first search. Breadth first search is the independent cascade model with a 100\% chanche to activate the neighbores.
+
 
 \begin{algorithm}
 \caption{Breadth First Search}
