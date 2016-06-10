@@ -24,14 +24,13 @@ A social network is a set of individuals connected to each other via some form o
 \section{Network properties}
 Network properties are different characteristic properties that networks displays. We will focus on those that are more relevant to social networks and how it is relevant to the ICM, data diffusion and seed selection.
 
+
 \subsection{The small world effect} \label{sec:SmallWorldeffect}
+The small world effect was first demonstrated by Stanley Milgram in the 1960s during his famous letter passing experiment \cite{SmallWorldProblemSmilgram1960}. The experiment involved passing letters from person to person to reach a designated target with only small steps. For the published case, the chain was around six\cite{Experiment1969}, meaning there were only six passes necessary for the letter to reach its destination. This shows us that for most pairs of vertices in a network can reach each other with a short path. A more precise wording is that "Networks are said to show the small world effect if the value of \textit{l} scales logarithmic or slower with the network size for a fixed mean degree." \cite{ComplexNetwork2003}. We have defined \textit{l}  to be the mean geodesic distance between vertex pairs in a network.
 
-The small world effect was first demonstrated by Stanley Milgram in the 1960s during his famous letter passing experiment \cite{SmallWorldProblemSmilgram1960}. The experiment involved passing letters from person to person to reach a designated target with only small steps. For the published case, the chain was around six  \cite{Experiment1969}, meaning there were only six passes necessary for the letter to reach its destination. This shows us that for most pairs of vertices in a network can reach each other with a short path. A more precise wording is that "Networks are said to show the small world effect if the value of \textit{l} scales logarithmic or slower with the network size for a fixed mean degree." \cite{ComplexNetwork2003}. We have defined \textit{l}  to be the mean geodesic distance between vertex pairs in a network.
-
-The small world problem can be summarized as: "what is the probability that any two people, selected arbitrarily from a large population, such as that of the United States, will know each other?" \cite{SmallworldExperiment1969}. This in itself is not that interesting, the paper \cite{SmallworldExperiment1969} asked even though  person \textit{A} and\textit{Z} does not know each other, do they have a set of individuals \{$b_1, b_2, ... b_n $\} who are mutual friend or even a "chain" of such individual(\textit {A-B-C-...-Y-Z}).
+The small world problem can be summarized as: "what is the probability that any two people, selected arbitrarily from a large population, such as that of the United States, will know each other?" \cite{Experiment1969}. This in itself is not that interesting, the paper \cite{Experiment1969} asked even though  person \textit{A} and\textit{Z} does not know each other, do they have a set of individuals \{$b_1, b_2, ... b_n $\} who are mutual friend or even a "chain" of such individual(\textit {A-B-C-...-Y-Z}).
 
 For the data diffusion problem, this kind of effect would result in that the diffusion through a network would need around 6 steps to have traveled through the entire network if the transition probability is high. Meaning that most node can reach each other through a relatively small step.
-
 \subsection{Transitivity/Clustering}
 In graphs and networks, there would often have a special connection pattern called \textit{triangles}. Triangles is where three Vertices : $v_a,v_b,v_c$ is all connected to each other as shown in Figure:\ref{fig:triangleStruc}. We can look at such a connection as person A is friends with B and C. There are a chance that B and C are friends with each other too. Transitivity is used to determent how many such components is present in the graph.  
 
@@ -51,14 +50,14 @@ For random graphs, the distribution would most likely be a Poiison distribution 
 
 
 \subsection{Degree correlations} \label{degreeCorr}
-As mentioned in section \ref{degreeDis}, the network have a degree distribution with few high degree nodes and many low degree nodes. One interesting properties is the degree correlations. Degree correlations is how the high degree and low degree nodes connects to each other. One question is wether high degree nodes tends to connect to other high degree nodes, or if they prefer to connect to low degree nodes. It turns out that both incidents ar found in networks \cite{complexNetwork2003}. Most social networks are assortative, meaning vertices have a selective linking, where high degree vertex tends to connects to other high degree vertex, while technological network and biological network are most likely disassortative \cite{AssortativeMixing2002}. 
+As mentioned in section \ref{degreeDis}, the network have a degree distribution with few high degree nodes and many low degree nodes. One interesting properties is the degree correlations. Degree correlations is how the high degree and low degree nodes connects to each other. One question is wether high degree nodes tends to connect to other high degree nodes, or if they prefer to connect to low degree nodes. It turns out that both incidents are found in networks \cite{ComplexNetwork2003}. Most social networks are assortative, meaning vertices have a selective linking, where high degree vertex tends to connects to other high degree vertex, while technological network and biological network are most likely disassortative \cite{AssortativeMixing2002}. 
 
 For data diffusion, this kind of behavior would result in wasting a seed by picking a majority of high degree nodes for starting seed, since most of them would be connected to each other. One solution is by mixing the selection, choose some percentage to be high degree, and some with lower degree.
 
 \subsection{Network resilience}
 For most network model, there is the need to remove nodes from the network. Removal of a node can have no effect on the network, or it can be devastating. Network resilience looks at how the network can resist to such a removal. There are two different removal schemes, the random removal where nodes are randomly picked and removed, or the targeted removal where specific nodes are removed depending on the criteria. 
 
-The experiment mentioned in  \cite{complexNetwork2003} by Albert et al showed that for a subset of network representing the internet and the world wide web, targeted removal had a larger impact then random removal. The targeted removal removed the highest degree nodes from the network, and the random removal removed nodes randomly. The random removal had a minimal effect on the network, while the targeted removal had a much larger impact, in which mean vertex-vertex distance increased. They proposed that the internet was highly resilient to random removal, while much more vulnerable to targeted removal. 
+The experiment mentioned in  \cite{ComplexNetwork2003} by Albert et al showed that for a subset of network representing the internet and the world wide web, targeted removal had a larger impact then random removal. The targeted removal removed the highest degree nodes from the network, and the random removal removed nodes randomly. The random removal had a minimal effect on the network, while the targeted removal had a much larger impact, in which mean vertex-vertex distance increased. They proposed that the internet was highly resilient to random removal, while much more vulnerable to targeted removal. 
 
 There are other studies that proposed a different interpretation regarding the data found.	
 
@@ -73,6 +72,8 @@ This type of community structure would have a large impact on how the algorithm 
 Breadth first search is an tree traversal algorithm. BFS start at the root node \textit{$v_r$}. The algorithm then stores all $v_r$s children node in an \textit{queue}. The algorithm then takes the first node from the queue, \textit{$v_1$} and stores all the children node to \textit{$v_1$} in the back of the queue, this process continues until the queue is empty and all the nodes have been iterated over. 
 
 Breadth first search is a common graph iteration algorithm. The breadth first search is often limited by the irregular memory access where the algorithm have to find the data stored in different spaces in the memory. As mentioned earlier, independent cascade model is one special case of the Breadth first search. Breadth first search is the independent cascade model with a 100\% chanche to activate the neighbores.
+
+
 
 
 \begin{algorithm}
@@ -97,6 +98,7 @@ Breadth first search is a common graph iteration algorithm. The breadth first se
 \Return dist
 \end{algorithmic}
 \end{algorithm}
+
 
 
 \section{Data diffusion}
@@ -189,9 +191,6 @@ From  \cite{AlgoToMath}, we can see that BFS can be recast as algebraic operatio
 	\caption{BFS on Boolean semiring}
 	\label{fig:bfsMatrix}
 \end{figure}
-
-
-
 \subsection{Semiring}
 A $semiring$ is a set of elements with two binary operations. The two operations are often known as "addition"(+) and "multiplication"($\times$).  As we shown in previous section, the algorithm perform matrix multiplication uses the two operations, multiplications and addition. In  \cite{HybridBFS2015}, the AND and OR operator was chosen instead of the normal addition and multiplication. 
 
@@ -250,6 +249,8 @@ $1 − \delta$
 \State Output the set $A$ of nodes.
 \end{algorithmic}
 \end{algorithm}
+
+
 
 
 \subsection{Random algorithm}
