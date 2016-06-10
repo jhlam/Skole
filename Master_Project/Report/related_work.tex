@@ -20,11 +20,25 @@ Here, we will give you a short overview of the current state regarding Informati
 
 This chapter, we will look at the state of research regarding High Level Synthesis, network research regarding Information Diffusion, and Optimization of Independent cascade model and Breadth first search.
 
-\section{Information Diffusion}
-There are multiple studies done regarding Information Diffusion. One studies shows how information diffusion can be applied during an disease outbreak\cite{InformationDiffusionThroughBlogspace}, viral marketing\cite{ViralMarketing} and message passing\cite{Starbird:2012:RRI:2145204.2145212}.
+\section{Information Diffusion} 
+There are multiple studies done regarding Information Diffusion. One studies shows how information diffusion can be applied during an disease outbreak\cite{InformationDiffusionThroughBlogspace}, viral marketing\cite{ViralMarketing}, coordinat during crisis situation\cite{Starbird:2012:RRI:2145204.2145212}. 
+
+Models of influence have been done on blogs\citep{Adar:2005:TIE:1092358.1092473}\cite{GomezRodriguez:2010:IND:1835804.1835933}, and twitter\cite{Bakshy:2011:EIQ:1935826.1935845}. We can see that in an age of social media, the studies of information diffusion is more relevant then ever. 
+
+while other\cite{InfoDiffAndExternalInfluInNetworks} have argued that the emerging of social network and media, have changed the traditional model. The activation is no longer only relying on neighbour nodes, but also an external influence. They found that large amount of  information volume in Twitter is the result of network diffusion, while a small amount is due to external events and factors outside the network\citep{InfoDiffAndExternalInfluInNetworks}. Another studies shows during the 2011 Egyptian Uprising, how larg amount of such a movement were "tweeted"\cite{Starbird:2012:RRI:2145204.2145212}.
+
+
+As we mentioned in \ref{background}, we mainly focus on 2 common information diffusion models, ICM and LTM. But there are different models too. One report\cite{5694014} proposed several different problems with traditional models where each node is either \textit{activated}(infected, influenced, '1') or \textit{inactive}(healthy, not reached, '0'), and passes the \textit{contagion}(information, data, infection, influence) to a neighbouring nodes through the edges. The report mentioned different assumptions that such models take. Among them is that a complete graph is provided, the spread of contagion is from a known source, and that the structure in the network is sufficient to explain the the behaviour\citep{5694014}. The report propose an alternative model, \textit{Linear Influence Model}(LIM), where the focus is on the global influence a infected node has on the rate of diffusion through the implicit network. This model takes the assumptions, that newly activated nodes is dependent on previous activated nodes. The LIM does not need explicit knowledge of the entire network, instead the model takes the newly activated nodes and model them as a \textit{influence function}, which is used to find the global influence. 	
+
+
 
 \section{High Level Synthesis}
-High Level Synthesis have getting more attention latelly, more active forums and recently, Vivado HLS became free for the public.
+High Level Synthesis as a concept have been around since the mid-1980s and early-1990s. Early tools, known as Carnegie-Mellon University design automation (CMU-DA)\citep{1085036}\citep{Parker:1979:CDA:800292.811694} was a pioneering early version of HLS tool. The tool gathered quickly considerable interest. A number of HLS tools were built in later year mostly for prototyping and research\cite{Granacki:1985:AAD:317825.317970}\citep{Paulin:1986:HMA:318013.318055}\citep{4069894}. Some of these early tools was able to produce real chips, but the reason for lack of further development and adaptation, was that RTL synthesis was not a widely accepted and immature field. This often lead to suboptimal solutions. 
+
+In the 2000, new HLS tools was developed in academia and in the industry. These tools, used hihg level language, C and C++. Vivado HLS, designed by Xilinx \citep{6409453}, is one such HLS tool. The Vivado HLS became free during their 2015.4 update\citep{VIVADOHLS}. This resulted in an revived interest in HLS. The community around HLS is also evolving, on the Xilinx-forum, there are multiple anwsers and active members. We can see that the solution designed by HLS tools is close to traditional hand-crafted designs\citep{6718388}.
+
+Different solutions that have 
 
 \section{Different optimization scheme}
 
+ 
